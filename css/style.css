@@ -1,0 +1,167 @@
+/*Font Awesome 4.6.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?v=4.6.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?#iefix&v=4.6.0') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff2?v=4.6.0') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff?v=4.6.0') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.ttf?v=4.6.0') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.svg?v=4.6.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /*overflow: hidden;*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.splash{
+  padding: 2rem 0;
+  color: #fff;
+  text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.description {
+  padding: 2rem 0;
+  color: #1A1A1A;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.splash {
+  background: #2E1811;
+  background-image: url("../images/workbox-penzance-view.jpg");
+  background-size: cover;
+
+  /*-webkit-clip-path: polygon(0 0, 2000px 0, 1600px 87%, 0 100%);
+  clip-path: polygon(0 0, 2000px 0, 1600px 87%, 0 100%);*/
+}
+
+.logo,
+.newsletter,
+.social {
+  z-index: 2;
+}
+
+.cover {
+  padding: 2rem 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #1A1A1A;
+  z-index: 1;
+}
+
+.logo::after {
+  clear: both;
+}
+
+.social a{
+  color: #1A1A1A;
+  font-size: 40px;
+  padding: 12px;
+  line-height: 60px;
+  text-decoration: none;
+  text-shadow: none;
+  transition: color 0.6s ease;
+}
+.social ul{
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: -20px;
+}
+
+.social li{
+  display: inline-block;
+  height:60px;
+  width:60px;
+  transition: background-color 0.7s ease;
+  background-color: #FDA600;
+  color: #1A1A1A;
+  border-radius: 3px;
+}
+
+.twitter:hover{
+  transition: background-color 0.5s ease;
+  background-color: #00aced;
+  color: #fff;
+}
+
+.facebook:hover{
+  transition: background-color 0.5s ease;
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.twitter:hover a,
+.facebook:hover a{
+  transition: color 0.5s ease;
+  color: #fff;
+}
+
+a.social-facebook {
+  padding-left: 17px;
+}
+
+a.social-facebook:before {
+  font-family: FontAwesome;
+  content: "\f09a";
+}
+
+a.social-twitter:before {
+  font-family: FontAwesome;
+  content: "\f099";
+}
+
+h2 {
+  z-index: 2;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h3 {
+  z-index: 2;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* TEMP STYLES FOR LANDING PAGE */
+.logo {
+  margin-top: -60px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.twitter {
+  margin-left: -15px;
+  margin-right: 30px;
+}
