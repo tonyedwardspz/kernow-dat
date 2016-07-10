@@ -9,8 +9,10 @@
 }
 
 body {
-  /*overflow: hidden;*/
+  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -32,6 +34,9 @@ p {
   -webkit-flex-direction: column;
   flex-direction: column;
   z-index: 2;
+  background: #2E1811;
+  background-image: url("../images/workbox-penzance-view.jpg");
+  background-size: cover;
 }
 
 .description {
@@ -45,17 +50,12 @@ p {
   justify-content: center;
   -webkit-flex-direction: column;
   flex-direction: column;
-  max-width: 800px;
-  margin: 0 auto;
+
 }
 
-.splash {
-  background: #2E1811;
-  background-image: url("../images/workbox-penzance-view.jpg");
-  background-size: cover;
-
-  /*-webkit-clip-path: polygon(0 0, 2000px 0, 1600px 87%, 0 100%);
-  clip-path: polygon(0 0, 2000px 0, 1600px 87%, 0 100%);*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .logo,
@@ -69,6 +69,9 @@ p {
   width: 100vw;
   height: 100vh;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   position: absolute;
   opacity: 0.6;
   top: 0;
@@ -92,6 +95,7 @@ p {
   text-shadow: none;
   transition: color 0.6s ease;
 }
+
 .social ul{
   margin-left: 0;
   padding-left: 0;
@@ -146,11 +150,141 @@ h2 {
   text-align: center;
 }
 
-h3 {
+.splash h3 {
   z-index: 2;
   text-align: center;
   margin-top: 0;
+  clear: both;
 }
+
+button,
+input[type="submit"],
+.button {
+  transition: background-color 0.7s ease;
+  background-color: #FDA600;
+  color: #1A1A1A;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 1em 4em;
+  display: inline-flex;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.button:hover {
+  color: #fff;
+}
+
+
+.supporters-logos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supporters-logos span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.supporter-logo {
+  max-width: 200px;
+  max-height: 125px;
+}
+
+
+/* Location */
+
+.location {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+
+h3 {
+  margin-top: 4em;
+}
+
+.location,
+.supported-by,
+.newsletter {
+  margin-bottom: 6em;
+}
+
+.location p {
+  margin-top: 0;
+}
+
+.location iframe {
+  min-height: 270px;
+}
+
+.location-text {
+  flex-grow: 1;
+  width: 50%;
+  padding-right: 3em;
+}
+
+.location-text .button {
+  margin-top: 1em;
+}
+
+.location-map {
+  flex-grow: 1;
+  width: 50%;
+}
+
+
+
+/* Newsletter */
+
+.newsletter {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  background-color: #1A1A1A;
+}
+
+footer p {
+  width: 50%;
+  flex-grow: 1;
+  text-align: center;
+  color: #fff;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+
 
 /* TEMP STYLES FOR LANDING PAGE */
 .logo {
