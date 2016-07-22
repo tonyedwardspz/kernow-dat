@@ -15,6 +15,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  /*font-family: -apple-system, ".SFNSText-Regular", "San Francisco","Oxygen", "Ubuntu", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;*/
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -38,6 +42,19 @@ h3 {
   margin: 0 auto;
 }
 
+.container h3 {
+  display: inline-block;
+  border-bottom: 2px solid #FDA600;
+  padding-bottom: .1em;
+  min-width: 1%;
+}
+
+h3.animated-h3-border {
+  min-width: 100%;
+  transition: min-width 1s;
+  -webkit-transition: min-width 1s;
+}
+
 button,
 input[type="submit"],
 .button {
@@ -46,7 +63,6 @@ input[type="submit"],
   color: #1A1A1A;
   border: none;
   border-radius: 3px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   text-decoration: none;
   padding: 1em 4em;
@@ -61,6 +77,11 @@ input[type="submit"]:hover,
   color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+  h3 {
+    margin-top: 2em;
+  }
+}
 
 
 /* Splash Screen */
@@ -81,8 +102,40 @@ input[type="submit"]:hover,
   flex-direction: column;
   z-index: 2;
   background: #2E1811;
-  background-image: url("../images/workbox-penzance-view.jpg");
+  /*background-image: url("../images/workbox-penzance-view.jpg");*/
   background-size: cover;
+}
+
+@media all and (min-width: 601px) {
+    .cover {
+        background-image: url("../images/workbox-view-800-portrait.JPG");
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .cover {
+        background-image: url("../images/workbox-view-1400-landscape.JPG");
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .cover {
+        background-image: url("../images/workbox-view-2000-landscape.JPG");
+        background-size: cover;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .cover {
+        background-image: url("../images/workbox-view-600-portrait.JPG");
+        background-size: cover;
+    }
+}
+
+.splash h3 {
+  font-size: 1.3em;
 }
 
 .cover {
@@ -101,6 +154,11 @@ input[type="submit"]:hover,
   right: 0;
   background-color: #1A1A1A;
   z-index: 1;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
 }
 
 .logo::after {
@@ -208,6 +266,12 @@ a.social-twitter:before {
   z-index: 2;
 }
 
+@media screen and (max-width: 600px) {
+  .description {
+    margin-top: 4em;
+  }
+}
+
 
 
 /* Supporters */
@@ -231,13 +295,31 @@ a.social-twitter:before {
   align-items: center;
   justify-content: center;
   width: calc(100% * (1/3));
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .supporter-logo {
   max-width: 200px;
   max-height: 125px;
 }
+
+@media screen and (max-width: 600px) {
+  .supporters-logos span {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .supporters-logos span {
+    width: 100%;
+  }
+
+  .supporter-logo {
+    max-width: 200px;
+    max-height: 125px;
+  }
+}
+
 
 
 /* Location */
@@ -267,9 +349,33 @@ a.social-twitter:before {
   margin-top: 1em;
 }
 
+.location-text span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .location-map {
   flex-grow: 1;
   width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .location {
+    flex-direction: column;
+  }
+
+  .location-text,
+  .location-map {
+    width: 100%;
+  }
+
+  .location-text {
+    margin-bottom: 1em;
+  }
 }
 
 
@@ -312,6 +418,7 @@ form {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 1em;
+    font-size: 1em;
 }
 
 .newsletter .first-name {
@@ -326,6 +433,21 @@ form {
 
 .newsletter .email {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .newsletter .first-name,
+  .newsletter .last-name {
+    flex-grow: 1;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 
@@ -346,10 +468,6 @@ footer p {
   width: 50%;
   flex-grow: 1;
   color: #fff;
-}
-
-footer p {
-  align-self: flex-end;
 }
 
 footer p:last-of-type{
