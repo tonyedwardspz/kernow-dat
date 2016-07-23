@@ -67,7 +67,7 @@ function setupApp() {
   // Calculate the distance from top that h3 effects should trigger
   app.triggerHeight = Math.floor(window.innerHeight - ((window.innerHeight / 100) * 10));
 
-  console.log(app);
+  // console.log(app);
 }
 
 // function calculateContainerWidth(container) {
