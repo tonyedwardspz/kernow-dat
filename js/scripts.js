@@ -7,6 +7,8 @@ var app = {
   h3Location: null,
   h3Supporters: 0,
   h3Newsletter: 0,
+  h3Speakers: 0,
+  h3Demos: 0,
   lastScroll: 0,
   scrollingDown: null
 };
@@ -43,6 +45,16 @@ function enlargeH3Underlines() {
     if (newsletterDistanceToTop <= app.triggerHeight && newsletterDistanceToTop > 0){
       app.h3Newsletter.classList.add('animated-h3-border');
     }
+
+    var speakersDistanceToTop = app.h3Speakers.getBoundingClientRect().top;
+    if (speakersDistanceToTop <= app.triggerHeight && speakersDistanceToTop > 0){
+      app.h3Speakers.classList.add('animated-h3-border');
+    }
+
+    var demoDistanceToTop = app.h3Demos.getBoundingClientRect().top;
+    if (demoDistanceToTop <= app.triggerHeight && demoDistanceToTop > 0){
+      app.h3Demos.classList.add('animated-h3-border');
+    }
   });
 }
 
@@ -59,6 +71,8 @@ function setupApp() {
   app.h3Location = document.getElementById('location'); //.offsetWidth;
   app.h3Supporters = document.getElementById('supporters'); //.offsetWidth;
   app.h3Newsletter = document.getElementById('newsletter'); //.offsetWidth;
+  app.h3Speakers = document.getElementById('speakers'); //.offsetWidth;
+  app.h3Demos = document.getElementById('demos');
 
   // Get widths and current positions
   // app.containerWidth = calculateContainerWidth(app.container);
