@@ -9,6 +9,7 @@ var app = {
   h3Newsletter: 0,
   h3Speakers: 0,
   h3Demos: 0,
+  h3Talk: 0,
   lastScroll: 0,
   scrollingDown: null
 };
@@ -55,6 +56,11 @@ function enlargeH3Underlines() {
     if (demoDistanceToTop <= app.triggerHeight && demoDistanceToTop > 0){
       app.h3Demos.classList.add('animated-h3-border');
     }
+
+    var talkDistanceToTop = app.h3Talk.getBoundingClientRect().top;
+    if (talkDistanceToTop <= app.triggerHeight && talkDistanceToTop > 0){
+      app.h3Talk.classList.add('animated-h3-border');
+    }
   });
 }
 
@@ -67,12 +73,13 @@ function enlargeH3Underlines() {
 
 function setupApp() {
   // Store reference to reused items
-  // app.container = document.getElementsByClassName('container')[0]; //.clientWidth;
+  app.container = document.getElementsByClassName('container')[0]; //.clientWidth;
   app.h3Location = document.getElementById('location'); //.offsetWidth;
   app.h3Supporters = document.getElementById('supporters'); //.offsetWidth;
   app.h3Newsletter = document.getElementById('newsletter'); //.offsetWidth;
   app.h3Speakers = document.getElementById('speakers'); //.offsetWidth;
   app.h3Demos = document.getElementById('demos');
+  app.h3Talk = document.getElementById('talk');
 
   // Get widths and current positions
   // app.containerWidth = calculateContainerWidth(app.container);

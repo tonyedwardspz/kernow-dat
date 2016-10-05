@@ -73,6 +73,7 @@ button,
 input[type="submit"],
 .button {
   transition: background-color 0.7s ease;
+  transition: color 0.5s ease;
   background-color: #FDA600;
   color: #1A1A1A;
   border: none;
@@ -83,12 +84,14 @@ input[type="submit"],
   display: inline-flex;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 button:hover,
 input[type="submit"]:hover,
 .button:hover {
   color: #fff;
+  transition: color 0.5s ease;
 }
 
 @media screen and (max-width: 600px) {
@@ -116,34 +119,34 @@ input[type="submit"]:hover,
   flex-direction: column;
   z-index: 2;
   background: #2E1811;
-  /*background-image: url("../images/workbox-penzance-view.jpg");*/
+  /*background-image: url("../images/kernow-dat-view.jpg");*/
   background-size: cover;
 }
 
 @media all and (min-width: 601px) {
     .cover {
-        background-image: url("../images/workbox-view-800-portrait.JPG");
+        background-image: url("../images/kernow-dat-view-800-portrait.jpg");
         background-size: cover;
     }
 }
 
 @media all and (min-width: 800px) {
     .cover {
-        background-image: url("../images/workbox-view-1400-landscape.JPG");
+        background-image: url("../images/kernow-dat-view-1400-landscape.jpg");
         background-size: cover;
     }
 }
 
 @media all and (min-width: 1400px) {
     .cover {
-        background-image: url("../images/workbox-view-2000-landscape.JPG");
+        background-image: url("../images/kernow-dat-view-2000-landscape.jpg");
         background-size: cover;
     }
 }
 
 @media all and (max-width: 600px) {
     .cover {
-        background-image: url("../images/workbox-view-600-portrait.JPG");
+        background-image: url("../images/kernow-dat-view-600-portrait.jpg");
         background-size: cover;
     }
 }
@@ -329,7 +332,7 @@ a.social-twitter:before {
 .individual-speaker-card {
   display: inline-block;
   width: 50%;
-  background-image: url("../images/workbox-view-speaker-bg.jpg");
+  background-image: url("../images/kernow-dat-speaker.jpg");
   background-size: cover;
   padding: 1em;
   -webkit-box-sizing: border-box;
@@ -456,7 +459,8 @@ a.social-twitter:before {
   margin-top: 1em;
 }
 
-.location-text span {
+.location-text span,
+.talk span {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -508,7 +512,6 @@ form {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6em;
 }
 
 .newsletter input[type="text"],
@@ -555,6 +558,18 @@ form {
     width: 100%;
     margin-right: 0;
   }
+}
+
+
+/* Want to talk */
+
+.talk {
+    margin-bottom: 6em;
+}
+
+.talk a {
+  margin: 0 auto;
+  text-align: center;
 }
 
 
