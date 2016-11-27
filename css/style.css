@@ -329,6 +329,35 @@ a.social-twitter:before {
   margin-top: 1.5em;
 }
 
+.speaker-details a {
+  text-decoration: none;
+  border-bottom: solid 1px white;
+  transition: all 0.5s ease;
+}
+
+.speaker-details a:link {
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* visited link */
+.speaker-details a:visited {
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* mouse over link */
+.speaker-details a:hover {
+    color: lightgrey;
+    transition: all 0.5s ease;
+}
+
+/* selected link */
+.speaker-details a:active {
+    color: white;
+    transition: all 0.5s ease;
+}
+
 .individual-speaker-card {
   display: inline-block;
   width: 50%;
