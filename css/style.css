@@ -26,10 +26,9 @@ progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{f
 
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', -apple-system, ".SFNSText-Regular", "San Francisco","Oxygen", "Ubuntu", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  /*font-family: -apple-system, ".SFNSText-Regular", "San Francisco","Oxygen", "Ubuntu", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;*/
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -119,7 +118,6 @@ input[type="submit"]:hover,
   flex-direction: column;
   z-index: 2;
   background: #2E1811;
-  /*background-image: url("../images/kernow-dat-view.jpg");*/
   background-size: cover;
 }
 
@@ -155,6 +153,12 @@ input[type="submit"]:hover,
   font-size: 1.3em;
 }
 
+.button--tickets {
+  z-index: 100;
+  text-shadow: none;
+  margin-top: 1em;
+}
+
 .cover {
   padding: 2rem 0;
   width: 100vw;
@@ -180,6 +184,13 @@ input[type="submit"]:hover,
 
 .logo::after {
   clear: both;
+}
+
+@media all and (max-width: 800px) {
+    .logo {
+      height: 200px;
+      width: 200px;
+    }
 }
 
 .social a{
