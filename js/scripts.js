@@ -8,8 +8,10 @@ var app = {
   h3Supporters: 0,
   h3Newsletter: 0,
   h3Speakers: 0,
+  h3Sponsors: 0,
   h3Demos: 0,
   h3Talk: 0,
+  h3Tickets: 0,
   lastScroll: 0,
   scrollingDown: null
 };
@@ -61,6 +63,16 @@ function enlargeH3Underlines() {
     if (talkDistanceToTop <= app.triggerHeight && talkDistanceToTop > 0){
       app.h3Talk.classList.add('animated-h3-border');
     }
+
+    var ticketsDistanceToTop = app.h3Tickets.getBoundingClientRect().top;
+    if (ticketsDistanceToTop <= app.triggerHeight && ticketsDistanceToTop > 0){
+      app.h3Tickets.classList.add('animated-h3-border');
+    }
+
+    var sponsorsDistanceToTop = app.h3Sponsors.getBoundingClientRect().top;
+    if (sponsorsDistanceToTop <= app.triggerHeight && sponsorsDistanceToTop > 0){
+      app.h3Sponsors.classList.add('animated-h3-border');
+    }
   });
 }
 
@@ -80,6 +92,8 @@ function setupApp() {
   app.h3Speakers = document.getElementById('speakers'); //.offsetWidth;
   app.h3Demos = document.getElementById('demos');
   app.h3Talk = document.getElementById('talk');
+  app.h3Tickets = document.getElementById('tickets');
+  app.h3Sponsors = document.getElementById('sponsors');
 
   // Get widths and current positions
   // app.containerWidth = calculateContainerWidth(app.container);

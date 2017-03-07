@@ -153,6 +153,12 @@ input[type="submit"]:hover,
   font-size: 1.3em;
 }
 
+.button--tickets {
+  z-index: 100;
+  text-shadow: none;
+  margin-top: 1em;
+}
+
 .cover {
   padding: 2rem 0;
   width: 100vw;
@@ -178,6 +184,13 @@ input[type="submit"]:hover,
 
 .logo::after {
   clear: both;
+}
+
+@media all and (max-width: 800px) {
+    .logo {
+      height: 200px;
+      width: 200px;
+    }
 }
 
 .social a{
