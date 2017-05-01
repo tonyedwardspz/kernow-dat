@@ -69,10 +69,10 @@ function enlargeH3Underlines() {
       app.h3Tickets.classList.add('animated-h3-border');
     }
 
-    var sponsorsDistanceToTop = app.h3Sponsors.getBoundingClientRect().top;
-    if (sponsorsDistanceToTop <= app.triggerHeight && sponsorsDistanceToTop > 0){
-      app.h3Sponsors.classList.add('animated-h3-border');
-    }
+    // var sponsorsDistanceToTop = app.h3Sponsors.getBoundingClientRect().top;
+    // if (sponsorsDistanceToTop <= app.triggerHeight && sponsorsDistanceToTop > 0){
+    //   app.h3Sponsors.classList.add('animated-h3-border');
+    // }
   });
 }
 
@@ -93,7 +93,7 @@ function setupApp() {
   app.h3Demos = document.getElementById('demos');
   app.h3Talk = document.getElementById('talk');
   app.h3Tickets = document.getElementById('tickets');
-  app.h3Sponsors = document.getElementById('sponsors');
+  // app.h3Sponsors = document.getElementById('sponsors');
 
   // Get widths and current positions
   // app.containerWidth = calculateContainerWidth(app.container);
