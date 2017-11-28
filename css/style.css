@@ -3,7 +3,11 @@
 @font-face {
   font-family: 'FontAwesome';
   src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?v=4.6.0');
-  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?#iefix&v=4.6.0') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff2?v=4.6.0') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff?v=4.6.0') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.ttf?v=4.6.0') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.svg?v=4.6.0#fontawesomeregular') format('svg');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?#iefix&v=4.6.0') format('embedded-opentype'),
+       url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff2?v=4.6.0') format('woff2'),
+       url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff?v=4.6.0') format('woff'),
+       url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.ttf?v=4.6.0') format('truetype'),
+       url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.svg?v=4.6.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -124,28 +128,24 @@ input[type="submit"]:hover,
 @media all and (min-width: 601px) {
     .cover {
         background-image: url("../images/kernow-dat-view-800-portrait.jpg");
-        background-size: cover;
     }
 }
 
 @media all and (min-width: 800px) {
     .cover {
         background-image: url("../images/kernow-dat-view-1400-landscape.jpg");
-        background-size: cover;
     }
 }
 
 @media all and (min-width: 1400px) {
     .cover {
         background-image: url("../images/kernow-dat-view-2000-landscape.jpg");
-        background-size: cover;
     }
 }
 
 @media all and (max-width: 600px) {
     .cover {
         background-image: url("../images/kernow-dat-view-600-portrait.jpg");
-        background-size: cover;
     }
 }
 
@@ -175,6 +175,8 @@ input[type="submit"]:hover,
   right: 0;
   background-color: #1A1A1A;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
 }
 
 .logo {
