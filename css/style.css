@@ -151,6 +151,10 @@ input[type="submit"]:hover,
 
 .splash h3 {
   font-size: 1.3em;
+  z-index: 2;
+  text-align: center;
+  margin-top: 0;
+  clear: both;
 }
 
 .button--tickets {
@@ -182,6 +186,7 @@ input[type="submit"]:hover,
 .logo {
   max-width: 250px;
   height: auto;
+  margin-top: -60px;
 }
 
 .logo::after {
@@ -193,6 +198,10 @@ input[type="submit"]:hover,
       height: 200px;
       width: 200px;
     }
+}
+
+.social {
+  margin-top: 20px;
 }
 
 .social a{
@@ -216,64 +225,85 @@ input[type="submit"]:hover,
   height:60px;
   width:60px;
   transition: background-color 0.7s ease;
+  transition: background 0.7s ease;
   background-color: #FDA600;
+  background: #FDA600;
   color: #1A1A1A;
   border-radius: 3px;
 }
 
-.twitter:hover{
+.social li a:before {
+  font-family: FontAwesome;
+}
+
+.social li a:hover {
+  transition: color 0.5s ease;
   transition: background-color 0.5s ease;
-  background-color: #00aced;
+  transition: background 0.5s ease;
   color: #fff;
+}
+
+.social li:hover a{
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+  transition: background 0.5s ease;
+  color: #fff;
+}
+
+.twitter:hover{
+  background-color: #00aced;
 }
 
 .facebook:hover{
-  transition: background-color 0.5s ease;
   background-color: #3b5998;
-  color: #fff;
 }
 
-.twitter:hover a,
-.facebook:hover a{
-  transition: color 0.5s ease;
-  color: #fff;
+.linkedin:hover{
+  background-color: #0077b5;
 }
 
-a.social-facebook {
+.instagram:hover{
+  background-color: #d92e7f;
+  /*background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);*/
+}
+
+a.social-facebook{
   padding-left: 17px;
 }
 
 a.social-facebook:before {
-  font-family: FontAwesome;
   content: "\f09a";
 }
 
 a.social-twitter:before {
-  font-family: FontAwesome;
   content: "\f099";
 }
 
-.splash h3 {
-  z-index: 2;
-  text-align: center;
-  margin-top: 0;
-  clear: both;
+a.social-instagram:before {
+  content: "\f16d";
 }
 
-.logo {
-  margin-top: -60px;
-}
-
-.social {
-  margin-top: 20px;
+a.social-linkedin:before {
+  content: "\f0e1";
 }
 
 .twitter {
   margin-left: -15px;
+}
+
+.facebook,
+.twitter,
+.instagram {
   margin-right: 30px;
 }
 
-
+@media all and (max-width: 800px) {
+  .facebook,
+  .twitter,
+  .instagram {
+    margin-right: 10px;
+  }
+}
 
 /* Description */
 
