@@ -53,6 +53,13 @@ h3 {
   font-size: 2em;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container {
   max-width: 832px;
   padding: 0 1em;
@@ -110,10 +117,6 @@ input[type="submit"]:hover,
   padding: 2rem 0;
   color: #fff;
   text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   height: 500px;
   height: 100vh;
   align-items: center;
@@ -167,10 +170,6 @@ input[type="submit"]:hover,
   padding: 2rem 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   position: absolute;
   opacity: 0.6;
   top: 0;
@@ -309,10 +308,6 @@ a.social-linkedin:before {
 
 .description {
   color: #1A1A1A;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   align-items: center;
   justify-content: center;
   -webkit-flex-direction: column;
@@ -336,10 +331,6 @@ a.social-linkedin:before {
 /* Speakers*/
 
 .speakers {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   align-items: stretch;
   justify-content: center;
   color: white;
@@ -352,10 +343,6 @@ a.social-linkedin:before {
 }
 
 .speaker-details {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
@@ -458,10 +445,6 @@ a.social-linkedin:before {
 /* Supporters */
 
 .supporters-logos {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -501,15 +484,9 @@ a.social-linkedin:before {
   }
 }
 
-
-
 /* Location */
 
 .location {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   overflow-x: hidden;
 }
 
@@ -533,10 +510,6 @@ a.social-linkedin:before {
 
 .location-text span,
 .talk span {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -568,19 +541,11 @@ a.social-linkedin:before {
 .newsletter {
   max-width: 600px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   flex-wrap: wrap;
 }
 
 form {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -649,13 +614,6 @@ form {
 
 footer {
   background-color: #1A1A1A;
-}
-
-footer .container {
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
 }
 
 footer p {
