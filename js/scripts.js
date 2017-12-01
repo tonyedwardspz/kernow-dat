@@ -20,6 +20,7 @@ var app = {
   setupApp();
   setScrollDirection();
   enlargeH3Underlines();
+  setYear();
 })();
 
 function setScrollDirection() {
@@ -103,6 +104,16 @@ function setupApp() {
   app.triggerHeight = Math.floor(window.innerHeight - ((window.innerHeight / 100) * 10));
 
   // console.log(app);
+}
+
+function setYear() {
+  var currentYear = (new Date()).getFullYear();
+  var displayedYearContainer = document.getElementById('current-year');
+  var displayedYear = displayedYearContainer.innerHTML;
+
+  if (currentYear > displayedYear){
+    displayedYearContainer.innerHTML = currentYear;
+  }
 }
 
 // function calculateContainerWidth(container) {
