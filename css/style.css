@@ -95,6 +95,7 @@ input[type="submit"],
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  min-height: 18px;
 }
 
 button:hover,
@@ -534,6 +535,14 @@ a.social-linkedin:before {
   }
 }
 
+
+.supported-by {
+  min-height: 360px;
+}
+
+.sponsored-by {
+  min-height: 0;
+}
 
 
 /* Newsletter */
