@@ -29,7 +29,6 @@ function setScrollDirection() {
 
     app.scrollingDown = curPos > app.lastScroll ? true : false;
     app.lastScroll = curPos;
-    // console.log(app.scrollingDown);
   });
 }
 
@@ -55,10 +54,10 @@ function enlargeH3Underlines() {
       app.h3Speakers.classList.add('animated-h3-border');
     }
 
-    var demoDistanceToTop = app.h3Demos.getBoundingClientRect().top;
-    if (demoDistanceToTop <= app.triggerHeight && demoDistanceToTop > 0){
-      app.h3Demos.classList.add('animated-h3-border');
-    }
+    // var demoDistanceToTop = app.h3Demos.getBoundingClientRect().top;
+    // if (demoDistanceToTop <= app.triggerHeight && demoDistanceToTop > 0){
+    //   app.h3Demos.classList.add('animated-h3-border');
+    // }
 
     var talkDistanceToTop = app.h3Talk.getBoundingClientRect().top;
     if (talkDistanceToTop <= app.triggerHeight && talkDistanceToTop > 0){
@@ -77,13 +76,6 @@ function enlargeH3Underlines() {
   });
 }
 
-// function locationH3() {
-//   console.log('locationh3');
-//   var triggerBreakdown = app.triggerHeight / 100;
-//   var remainingH3Width = app.containerWidth - app.h3Location.offsetWidth;
-//   var remainingBreakdown = remainingH3Width / 100;
-// }
-
 function setupApp() {
   // Store reference to reused items
   app.container = document.getElementsByClassName('container')[0]; //.clientWidth;
@@ -91,19 +83,14 @@ function setupApp() {
   app.h3Supporters = document.getElementById('supporters'); //.offsetWidth;
   app.h3Newsletter = document.getElementById('newsletter'); //.offsetWidth;
   app.h3Speakers = document.getElementById('speakers'); //.offsetWidth;
-  app.h3Demos = document.getElementById('demos');
+  // app.h3Demos = document.getElementById('demos');
   app.h3Talk = document.getElementById('talk');
   app.h3Tickets = document.getElementById('tickets');
   app.h3Sponsors = document.getElementById('sponsors');
 
-  // Get widths and current positions
-  // app.containerWidth = calculateContainerWidth(app.container);
-  app.lastScroll = window.pageYOffset || document.body.scrollTop;
-
   // Calculate the distance from top that h3 effects should trigger
+  app.lastScroll = window.pageYOffset || document.body.scrollTop;
   app.triggerHeight = Math.floor(window.innerHeight - ((window.innerHeight / 100) * 10));
-
-  // console.log(app);
 }
 
 function setYear() {
@@ -115,11 +102,3 @@ function setYear() {
     displayedYearContainer.innerHTML = currentYear;
   }
 }
-
-// function calculateContainerWidth(container) {
-//   // Why on earth is getting the padded value of a container so convoluted?
-//   var style = window.getComputedStyle(container, null);
-//   var padding = style.getPropertyValue('padding-left');
-//   padding = padding.substr(0, padding.length-2) * 2;
-//   return container.clientWidth - padding;
-// }
