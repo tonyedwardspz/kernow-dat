@@ -78,11 +78,11 @@ function enlargeH3Underlines() {
 
 function setupApp() {
   // Store reference to reused items
-  app.container = document.getElementsByClassName('container')[0]; //.clientWidth;
-  app.h3Location = document.getElementById('location'); //.offsetWidth;
-  app.h3Supporters = document.getElementById('supporters'); //.offsetWidth;
-  app.h3Newsletter = document.getElementById('newsletter'); //.offsetWidth;
-  app.h3Speakers = document.getElementById('speakers'); //.offsetWidth;
+  app.container = document.getElementsByClassName('container')[0];
+  app.h3Location = document.getElementById('location');
+  app.h3Supporters = document.getElementById('supporters');
+  app.h3Newsletter = document.getElementById('newsletter');
+  app.h3Speakers = document.getElementById('speakers');
   // app.h3Demos = document.getElementById('demos');
   app.h3Talk = document.getElementById('talk');
   app.h3Tickets = document.getElementById('tickets');
