@@ -292,15 +292,13 @@ a.social-linkedin:before {
 }
 
 .facebook,
-.twitter,
-.instagram {
+.twitter {
   margin-right: 30px;
 }
 
 @media all and (max-width: 800px) {
   .facebook,
-  .twitter,
-  .instagram {
+  .twitter {
     margin-right: 10px;
   }
 }
