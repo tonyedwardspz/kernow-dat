@@ -385,7 +385,6 @@ a.social-instagram svg {
 
 .individual-speaker-card {
   display: inline-block;
-  width: 50%;
   background-image: url("../images/kernow-dat-speaker.jpg");
   background-size: cover;
   padding: 1em;
@@ -410,6 +409,34 @@ a.social-instagram svg {
   margin-right: .5em;
 }
 
+.speaker-blurb {
+  color: #1A1A1A;
+  margin-right: 1em;
+  text-align: center;
+  padding-right: .2em;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  margin-top: .5em;
+  border: none;
+  color: #FDA600;
+  background-color: #FDA600;
+}
+
+.hr-wrap {
+  margin-right: 1em;
+}
+
+.speaker-blurb p {
+  text-align: left;
+}
+
+.speaker-wrapper {
+    width: 50%;
+}
+
 @media screen and (max-width: 800px) {
   .individual-speaker-card {
     text-align: center;
@@ -431,7 +458,7 @@ a.social-instagram svg {
     margin-bottom: 1em;
   }
 
-  .individual-speaker-card {
+  .speaker-wrapper {
     width: 100%;
   }
 }
