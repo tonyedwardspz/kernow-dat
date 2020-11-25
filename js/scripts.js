@@ -23,7 +23,7 @@ var app = {
   setScrollDirection();
   enlargeH3Underlines();
   setYear();
-  fixSpeakerHeight();
+  // fixSpeakerHeight();
 })();
 
 function setScrollDirection() {
