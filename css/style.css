@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 4em;
+  margin-top: 3em;
   font-size: 2em;
 }
 
@@ -329,7 +329,6 @@ a.social-instagram svg {
   align-items: stretch;
   justify-content: center;
   color: #1A1A1A;
-  margin-bottom: 1em;
 }
 
 .speakers h4 {
@@ -395,26 +394,18 @@ a.social-instagram svg {
   box-sizing: border-box;
 }
 
-/* .individual-speaker-card:nth-of-type(odd) {
-  margin-right: .5em;
-}
-
-.individual-speaker-card:nth-of-type(even) {
-  margin-left: .5em;
-} */
-
 .individual-speaker-card img {
   width: 200px;
   border-radius: 100px;
   border: 2px solid #FDA600;
 }
 
-.speaker-blurb {
+.speaker-blurb,
+.supporter-blurb {
   color: #1A1A1A;
   margin-right: 1em;
   text-align: center;
   padding-right: .2em;
-  padding-bottom: 32px;
 }
 
 hr {
@@ -430,7 +421,8 @@ hr {
   margin-right: 1em;
 }
 
-.speaker-blurb p {
+.speaker-blurb,
+.supporter-blurb p {
   text-align: left;
 }
 
@@ -455,6 +447,10 @@ hr {
 
   .speaker-wrapper {
     width: 100%;
+  }
+
+  .speaker-blurb {
+    padding-bottom: 32px;
   }
 }
 

@@ -118,17 +118,17 @@ function setYear() {
   }
 }
 
-function fixSpeakerHeight() {
-  var matches = document.getElementsByClassName('speaker-blurb');
-  var maxHeight = matches[0].clientHeight;
+// function fixSpeakerHeight() {
+//   var matches = document.getElementsByClassName('speaker-blurb');
+//   var maxHeight = matches[0].clientHeight;
   
-  for(var i = 1; i < matches.length; i++) {
-    if (matches[i].clientHeight > maxHeight) {
-      maxHeight = matches[i].clientHeight;
-    }
-  }
+//   for(var i = 1; i < matches.length; i++) {
+//     if (matches[i].clientHeight > maxHeight) {
+//       maxHeight = matches[i].clientHeight;
+//     }
+//   }
 
-  for(var j = 0; j < matches.length; j++) {
-    matches[j].style.height = maxHeight + 'px';
-  }
+//   for(var j = 0; j < matches.length; j++) {
+//     matches[j].style.height = maxHeight + 'px';
+//   }
 }

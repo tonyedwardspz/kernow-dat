@@ -149,9 +149,6 @@
 						<p>Justin Wiggan is an artist working at the frontiers of arts and public intervention. His practice includes a range of media from sound, phonics, film, drawing, installation, interventions and performance, and has also attracted collaboration across the medical research and creative industries sectors.</p>
 						<p>His works have been exhibited nationally and internationally: B.O. M Birmingham, Protein Gallery London, Baltic Gallery, Citric Gallery Italy, Gigantic Art Space New York. His aim is to educate, share and engage people with sound as a creative field and reconnect with their lives using sound art.</p>
 					</div>
-					<div class="hr-wrap">
-						<hr />
-					</div>
 				</div>
 
 				<div class="speaker-wrapper">
@@ -167,26 +164,6 @@
 							James is a graphic designer with a portfolio as diverse as creative arts projects (like this one) to designing beer bottles. He loves book design, clean functional websites, a good cup of coffee and a challenging brief!
 						</p>
 					</div>
-					<div  class="hr-wrap">
-						<hr />
-					</div>
-				</div>
-			</div>
-
-			<h3 id="demos">The Supporter</h3>
-			<div class="speakers flex">
-
-				<div class="individual-speaker-card">
-					<img src="images/supporters/morrab-library.jpg" alt="Morrab Library Penzance" />
-					<div class="speaker-details flex">
-						<h4><a href="https://morrablibrary.org.uk/" title="">Morrab Library</a></h4>
-						
-					</div>
-				</div>
-				<div class="speaker-blurb">
-					<p>Morrab Library was established in 1818 and is the only surviving independent library in Cornwall.</p>
-					<p>Located in a beautiful Victorian house in the heart of the Morrab Gardens, the library houses over 70,000 volumes and an extensive archive of photographs, manuscripts, and historic newspapers collected throughout its history. The Library’s particular strength is on Cornish history, literature and people.</p>
-					<p>We provide spaces to create, work, research, or just to sit, read and enjoy the beautiful views. We offer a regular schedule of talks and events, and opportunities to attend classes and workshops on a diverse range of topics. It's very much a social space too, and all are welcome.</p>
 				</div>
 			</div>
 
@@ -215,30 +192,40 @@
 
 			<h3 id="tickets">Tickets</h3>
 			<div class="supported-by">
+				<div id="eventbrite-widget-container-130447426765"></div>
 
-				<p>Get your ticket. Numbers are limited.</p>
+				<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
-			<div id="eventbrite-widget-container-130447426765"></div>
+				<script type="text/javascript">
+					var exampleCallback = function() {
+						console.log('Order complete!');
+					};
 
-			<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+					window.EBWidgets.createWidget({
+						// Required
+						widgetType: 'checkout',
+						eventId: '130447426765',
+						iframeContainerId: 'eventbrite-widget-container-130447426765',
 
-			<script type="text/javascript">
-				var exampleCallback = function() {
-					console.log('Order complete!');
-				};
+						// Optional
+						iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+						onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+					});
+				</script>
 
-				window.EBWidgets.createWidget({
-					// Required
-					widgetType: 'checkout',
-					eventId: '130447426765',
-					iframeContainerId: 'eventbrite-widget-container-130447426765',
+			</div>
 
-					// Optional
-					iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-					onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-				});
-			</script>
+			<h3 id="demos">The Supporter</h3>
+			<div class="speakers flex">
 
+				<div class="individual-speaker-card">
+					<img src="images/supporters/morrab-library.jpg" alt="Morrab Library Penzance" />
+				</div>
+				<div class="supporter-blurb">
+					<p><a href="https://morrablibrary.org.uk/" title="morrab library penzance">Morrab Library</a> was established in 1818 and is the only surviving independent library in Cornwall.</p>
+					<p>Located in a beautiful Victorian house in the heart of the Morrab Gardens, the library houses over 70,000 volumes and an extensive archive of photographs, manuscripts, and historic newspapers collected throughout its history. The Library’s particular strength is on Cornish history, literature and people.</p>
+					<p>We provide spaces to create, work, research, or just to sit, read and enjoy the beautiful views. We offer a regular schedule of talks and events, and opportunities to attend classes and workshops on a diverse range of topics. It's very much a social space too, and all are welcome.</p>
+				</div>
 			</div>
 
 			<!-- <h3 id="supporters">Supported by</h3>
@@ -294,10 +281,11 @@
 						<div class="response" id="mce-success-response" style="display:none"></div>
 					</div>
 
-			    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fca6c931c22381ff98203186b_35b8b26eff" tabindex="-1" value=""></div>
+				<div style="position: absolute; left: -5000px;" aria-hidden="true">
+					<input type="text" name="b_fca6c931c22381ff98203186b_35b8b26eff" tabindex="-1" value="">
+				</div>
 			    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 				</form>
-
 			</div>
 
 			<h3 id="conduct">Code of Conduct</h3>
