@@ -83,10 +83,10 @@ function enlargeH3Underlines() {
       app.h3Conduct.classList.add('animated-h3-border');
     }
 
-    // var creditDistanceToTop = app.h3Credit.getBoundingClientRect().top;
-    // if (creditDistanceToTop <= app.triggerHeight && creditDistanceToTop > 0){
-    //   app.h3Credit.classList.add('animated-h3-border');
-    // }
+    var formatDistanceToTop = app.h3Format.getBoundingClientRect().top;
+    if (formatDistanceToTop <= app.triggerHeight && formatDistanceToTop > 0){
+      app.h3Format.classList.add('animated-h3-border');
+    }
   });
 }
 
@@ -102,7 +102,7 @@ function setupApp() {
   app.h3Tickets = document.getElementById('tickets');
   // app.h3Sponsors = document.getElementById('sponsors');
   app.h3Conduct = document.getElementById('conduct');
-  // app.h3Credit = document.getElementById('credit');
+  app.h3Format = document.getElementById('format');
 
   // Calculate the distance from top that h3 effects should trigger
   app.lastScroll = window.pageYOffset || document.body.scrollTop;
