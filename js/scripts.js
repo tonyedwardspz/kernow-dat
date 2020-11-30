@@ -53,10 +53,10 @@ function enlargeH3Underlines() {
       app.h3Newsletter.classList.add('animated-h3-border');
     }
 
-    // var speakersDistanceToTop = app.h3Speakers.getBoundingClientRect().top;
-    // if (speakersDistanceToTop <= app.triggerHeight && speakersDistanceToTop > 0){
-    //   app.h3Speakers.classList.add('animated-h3-border');
-    // }
+    var speakersDistanceToTop = app.h3Speakers.getBoundingClientRect().top;
+    if (speakersDistanceToTop <= app.triggerHeight && speakersDistanceToTop > 0){
+      app.h3Speakers.classList.add('animated-h3-border');
+    }
 
     var projectDistanceToTop = app.h3Project.getBoundingClientRect().top;
     if (projectDistanceToTop <= app.triggerHeight && projectDistanceToTop > 0){
